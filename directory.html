@@ -1,60 +1,92 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<body>
-
- <h1 style="color:red;" align="center"  >Справочники</h1>
- 
-<style>
-   body {
-    background-image: url(https://i.pinimg.com/originals/ac/79/3d/ac793ddd460410d57ab1808cea92b101.jpg);
-    background-color: #c7b39b; /* Цвет фона */
+ <head>
+  <meta charset="utf-8">
+  <title>Тег DIV</title>
+  <style type="text/css">
+    body {
+     height:100%;
+    margin: 0; 
    }
-  .leftpic {
-    float: left; 
-    margin: 0 0 50px 50px;
+   
+   .block1 { 
+    width: 10%; 
+    height: 778px;
+    background: #000000;
+    border: solid 2px black; 
+    float: left;
    }
- rightpic {
+   .block2 { 
+    width: 10%; 
+    height: 778px;
+    background: #000000;
+    border: solid 2px black; 
     float: right; 
-    margin: 0 0 50px 50px;
    }
-	/*
- .image {
-	position	: relative;
-	width		: 100%; 
-}
-
-h2 {
-	position	: absolute;
-	top		: 130%;
-	left		: 0;
-	width		: 100%;
-}
-*/
-	
-  </style>
-
-  <p><a href="http://htmlbook.ru/html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" 
-                                            width="23%"  class="leftpic"></a>
-	 
-	
-	
-
- </p>
- 
- <p><a href="http://htmlbook.ru/css"><img src="http://4.bp.blogspot.com/-aWkWi8OwQ_s/UotBTtQ0c7I/AAAAAAAAEZY/E4l2_bKf3-I/s1600/CSS3.png" 
-                                     width="17%"  class="leftpic"></a>
- </p>
- 
- <p><a href="https://javascript.ru/manual"><img src="https://miro.medium.com/max/1200/1*pv6LE99Taf7usoD34Bgv4w.png" 
-                                     width="22%" class="leftpic"></a>
-
-  </p>
- <p><a href="https://www.php.net/manual/ru/langref.php"><img src="https://i.ibb.co/L9Rn75Z/php-logo.png" 
-                                     width="17%"  class="leftpic"></a>
-	
-	
+     .block3 { 
+    width:100%; 
+    height: 90px;
+      
+    background: #000000;
+    border: solid 2px black; 
+    float: right; 
+   }
+   .block4 { 
+    width: 70%; 
+height:670px;
+    background: #fc0; 
+    padding: 5px; 
+    border: solid 1px #black; 
+    float: right; 
+    position: relative; 
+    top: 50px; 
+    right: 4%; 
+    border-radius: 20px;
+   }
+   .block5 { 
+    width:100%; 
+    height: 90px;
+      
+    background: #000000;
+    border: solid 2px black; 
+    float: right;  
+   }
+   
+   .blockhtml{ 
+    text-align:center;
+    width:21%; 
+    height: 90%;
+       margin: 2%;
+       border-radius: 20px;
+     
+    background: #000000;
+   
+    float: left;  
+   }
+  </style> 
+ </head>
+ <body>
   
- /* https://it2019vki.github.io/task01.html */
+  <div class="block3"><center><h1 style=color:white;>Справочники</h1></center></div>
+  <div class="block1"></div>
+  <div class="block2"></div> 
+  <div class="block4">
+            <div class="blockhtml"><p><a href="http://htmlbook.ru/html"><img src="html.png" width="100%"  class="leftpic"></a>
+             <p><h3 style=color:white; >Справочник по HTML</h3></p>
+            </div> 
+            <div class="blockhtml"><p><a href="http://htmlbook.ru/css"><img src="css.png" width="100%"  class="leftpic"></a>
+             <p><h3  style=color:white; >Справочник по CSS</h3></p>  
+            </div>
+            <div class="blockhtml"><p><a href="https://javascript.ru/manual"><img src="java.png" width="100%"  class="leftpic"></a>
+             <p><h3 style=color:white; >Справочник по JavaScript</h3></p> 
+            </div>
+            <div class="blockhtml"><p><a href="https://www.php.net/manual/ru/langref.php"><img src="php.png" width="100%"  class="leftpic"></a>
+             <p><h3 style=color:white; >Справочник по PHP</h3></p> 
+            </div>
+  
+  </div> 
+  <div class="block5"></div> 
 
-</body>
+
+ </body>
 </html>
