@@ -1,0 +1,16 @@
+body { text-align: center; background-size:100%; background: url(ac793ddd460410d57ab1808cea92b101.jpg);}
+
+.text1 
+{
+  background: blue; color:red; font: yellow; font-size: 10px; text-indent: 20px; line-height:2;  
+}
+
+.text2
+{
+  background: red; color:yellow; font: blue; font-size: 50px; text-indent: 30px; line-height:2;  
+}
+
+.text3
+{
+  background:yellow; color:blue; font: red; font-size: 20px; text-indent: 10px; line-height:1; 
+}
