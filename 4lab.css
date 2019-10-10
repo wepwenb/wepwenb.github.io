@@ -1,13 +1,14 @@
-.block1
-{
-    display: none;
-}
-.block1:target
-{
-    display: block;
-}
+.block1 {
+			display: none;
+		}
+		
+		.block2:target {
+		display: block;
+		}
 .block2 {
-    display: none;
-}
-.block2:target {
-    display: block;
+			display: none;
+		}
+		
+		.block2:target {
+		display: block;
+		}
