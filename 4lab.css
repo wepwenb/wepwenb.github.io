@@ -13,5 +13,13 @@
 		display: block;
 		}
 	 
-.text1 {  background-color: #ffc0cb; border: 5px inset #850014; padding: 50px;  }
+.text1 {background-color: #ffc0cb;
+	border: 5px inset #850014;
+	padding: 50px; 
+	first-letter {
+    	font-size: 3em; /* Размер буквы */
+   	color: red; /* Цвет буквы */
+    	float: left; /* Выравнивание по левому краю */
+   	margin: 0 4px 2px 0; /* Отступы вокруг буквы */  }
+
 body{background-color:#ffe4e1;}
