@@ -36,9 +36,9 @@
 
 body{background-color:#ffe4e1;}
 a:link { color: #e0b3ff; }
-a:visited { color: #e0b3ff; }
+a:visited { color: #ffa500; }
 a:hover { color: #e0b3ff; }
-a:active { color: #ffc0cb; }
+a:active { color: 008000; }
 a:hover{ background-color: #ffc0cb; }
 tr:nth-child(even) { background-color: #e0b3ff; color: #8000ff;}
 tr:nth-child(odd) { background-color: #ffc0cb; color: #850014; }
