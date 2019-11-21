@@ -5,7 +5,8 @@
 <title>test</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+ 
 <link rel="stylesheet" type="text/css" href="test.css"/>
 <script>
 let array_of_correct_answers = ['B', 'Братислава', 'F', 'K', 'O', 'T', 'V', '1, '6', '8'];
@@ -28,7 +29,7 @@ function cout() {
 let n = 0;
 let p = proverka();
 if (p.length < numner_questions) {
-alert("Вы ответили не на все вопросы!")
+alert("Вы ответили не на все вопросы")
 }
 else {
 for (let i = 0; i < numner_questions; i++) {
@@ -37,7 +38,7 @@ n++;
 }
 }
 document.getElementById('bl').style.display = 'block'
-document.getElementById("result").innerHTML = "Правильных ответов: " + n;
+document.getElementById("result").innerHTML = "Правильно " + n;
 }
 }
 </script>
@@ -124,9 +125,6 @@ document.getElementById("result").innerHTML = "Правильных ответо
 <input type="radio" name="8" value="4"/>Машина<br/>
 <input type="radio" name="8" value="5"/>телевизор<br/>
 <input type="radio" name="8" value="6"/>Телефон<br/>
-<input type="radio"
- 
-name="8" value="6"/>Эйгон Таргариен<br/>
 </form>
 </li>
 <br></br>
