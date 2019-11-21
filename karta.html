@@ -1,152 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8"/>
-<title>test</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="testy.css">
+    <meta charset="UTF-8"/>
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
- <link rel="shortcut icon" href="favicon.png" type="image/png">
-<script>
-let massiv_otvetov = ['vopros12', 'Братислава', 'vopros32', 'vopros43', 'vopros53', 'vopros62', 'vopros72', 'vopros82', 'vopros93', 'vopros101'];
-let numner_questions = 10;
-let a = [];
-function proverka(j = 0) {
-let elements = document.getElementsByName(j);
-for (let i = 0, len = elements.length; i < len; ++i) {
-if(elements[i].type=="text")
-a.push(elements[i].value);
-if (elements[i].checked)
-a.push(elements[i].value);
-}
-j++;
-if (j < numner_questions)
-proverka(j);
-return a;
-}
-function cout() {
-let n = 0;
-let p = proverka();
-if (p.length < numner_questions) {
-alert("Вы ответили не на все вопросы")
-}
-else {
-for (let i = 0; i < numner_questions; i++) {
-if (p[i] == massiv_otvetov[i]) {
-n++;
-}
-}
-document.getElementById('bl').style.display = 'block'
-document.getElementById("result").innerHTML = "Правильно " + n;
-}
-}
-</script>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script>
+        let massiv_otvetov = ['vopros12', 'Братислава', 'vopros32', 'vopros43', 'vopros53', 'vopros62', 'vopros72', 'vopros82', 'vopros93', 'vopros101'];
+        let numner_questions = 10;
+        let a = [];
+        function proverka(j = 0) {
+            let elements = document.getElementsByName(j);
+            for (let i = 0, len = elements.length; i < len; ++i) {
+                if(elements[i].type=="text")
+                    a.push(elements[i].value);
+                if (elements[i].checked)
+                    a.push(elements[i].value);
+            }
+            j++;
+            if (j < numner_questions)
+                proverka(j);
+            return a;
+        }
+        function cout() {
+            let n = 0;
+            let p = proverka();
+            if (p.length < numner_questions) {
+                alert("Вы ответили не на все вопросы")
+            }
+            else {
+                for (let i = 0; i < numner_questions; i++) {
+                    if (p[i] == massiv_otvetov[i]) {
+                        n++;
+                    }
+                }
+                document.getElementById('bl').style.display = 'block'
+                document.getElementById("result").innerHTML = "Правильно " + n;
+            }
+        }
+    </script>
 </head>
 
 <body>
 <div class="back">
-<h1>Тест</h1>
-<h2>На общие темы</h2>
-<ol>
- <li>Сколько букв в русском алфавите?
-  <br>
-   <form id="a2">
-    <br><input type="radio" name="0" value="vopros11"/>31
-    <br><input type="radio" name="0" value="vopros12"/>33
-    <br><input type="radio" name="0" value="vopros13"/>28
-   </form>
- </li>
-<br>
- <li>Столица Словакии?
-<br>
-<form id="a">
- <br><input type="text" name="0">
-</form>
-</li>
-<br>
- <li>Сколько рёбер у человека?
-<br>
-<form id="a3">
-  <br><input type="radio" name="2" value="vopros31"/>22
-  <br><input type="radio" name="2" value="vopros32"/>24
-  <br><input type="radio" name="2" value="vopros33"/>26
- </form>
-</li>
-<br>
- <li>Какое название у самого большого амфитеатра Древнего Рима?
-<br>
-<form id="a4">
- <br><input type="radio" name="3" value="vopros41"/>Помпей
- <br><input type="radio" name="3" value="vopros42"/>Пула
- <br><input type="radio" name="3" value="vopros43"/>Колизей
-</form>
-</li>
-<br>
- <li> В каких года Винстон Черчиль являлся премьер-министром Великобритании?(19**)
-<br>
-<form id="a5">
- <br><input type="radio" name="4" value="vopros51"/>30-35
- <br><input type="radio" name="4" value="vopros42"/>35-40
- <br><input type="radio" name="4" value="vopros53"/>40-45
-</form>
-</li>
-<br>
- <li> Сколько зубов у взрослого человека?
-  <br>
-   <form id="a6">
-    <br><input type="radio" name="5" value="vopros61"/>28
-    <br><input type="radio" name="5" value="vopros62"/>32
-    <br><input type="radio" name="5" value="vopros63"/>36
-   </form>
-</li>
-<br>
-<li> Сколько всего было царей в России?
-<br><
-<form id="a7">
-<br><input type="radio" name="6" value="vopros71">12
-<br><input type="radio" name="6" value="vopros72">17
-<br><input type="radio" name="6" value="vopros73">18
-</form>
-</li>
-<br>
-<li>У Земли есть одна Луна, а у Марса?
-<br>
-<form id="a8">
-<br><input type="radio" name="7" value="vopros81"/>1
-<br><input type="radio" name="7" value="vopros82"/>2
-<br><input type="radio" name="7" value="vopros83"/>3
-</form>
-</li>
-<br>
-<li> Что из этого было изобретено раньше?
-<br>
-<form id="a9">
-<br><input type="radio" name="8" value="vopros91"/>Машина
-<br><input type="radio" name="8" value="vopros92"/>телевизор
-<br><input type="radio" name="8" value="vopros93"/>Телефон
-</form>
-</li>
-<br>
-<li> Выбрать произведение Чехова. 
-<br><
-<form id="a10">
-<br><input type="radio" name="9" value="vopros101" />«Дядя Ваня»<
-<br><input type="radio" name="9" value="vopros102" />«Кавказский пленник»
-<br><input type="radio" name="9" value="vopros103" />«Сказка о царе Салтане»
+    <h1>Тест</h1>
+    <h2>На общие темы</h2>
+    <ol>
+        <li>Сколько букв в русском алфавите?
 
-<br>
-</li>
-</ol>
-<input type="button" class="btn" value="Посмотреть результат" onclick="cout()">
-<a href="test_sq.pdf"><h3>PDF файл</h3></a>
+            <form id="a2">
+                <br><input type="radio" name="0" value="vopros11"/>31
+                <br><input type="radio" name="0" value="vopros12"/>33
+                <br><input type="radio" name="0" value="vopros13"/>28
+            </form>
+        </li>
+
+        <li>Столица Словакии?
+
+            <form id="a">
+                <br><input type="text" name="0">
+            </form>
+        </li>
+
+        <li>Сколько рёбер у человека?
+
+            <form id="a3">
+                <br><input type="radio" name="2" value="vopros31"/>22
+                <br><input type="radio" name="2" value="vopros32"/>24
+                <br><input type="radio" name="2" value="vopros33"/>26
+            </form>
+        </li>
+
+        <li>Какое название у самого большого амфитеатра Древнего Рима?
+
+            <form id="a4">
+                <br><input type="radio" name="3" value="vopros41"/>Помпей
+                <br><input type="radio" name="3" value="vopros42"/>Пула
+                <br><input type="radio" name="3" value="vopros43"/>Колизей
+            </form>
+        </li>
+
+        <li> В каких года Винстон Черчиль являлся премьер-министром Великобритании?(19**)
+
+            <form id="a5">
+                <br><input type="radio" name="4" value="vopros51"/>30-35
+                <br><input type="radio" name="4" value="vopros42"/>35-40
+                <br><input type="radio" name="4" value="vopros53"/>40-45
+            </form>
+        </li>
+
+        <li> Сколько зубов у взрослого человека?
+
+            <form id="a6">
+                <br><input type="radio" name="5" value="vopros61"/>28
+                <br><input type="radio" name="5" value="vopros62"/>32
+                <br><input type="radio" name="5" value="vopros63"/>36
+            </form>
+        </li>
+
+        <li> Сколько всего было царей в России?
+
+            <form id="a7">
+                <br><input type="radio" name="6" value="vopros71">12
+                <br><input type="radio" name="6" value="vopros72">17
+                <br><input type="radio" name="6" value="vopros73">18
+            </form>
+        </li>
+
+        <li>У Земли есть одна Луна, а у Марса?
+
+            <form id="a8">
+                <br><input type="radio" name="7" value="vopros81"/>1
+                <br><input type="radio" name="7" value="vopros82"/>2
+                <br><input type="radio" name="7" value="vopros83"/>3
+            </form>
+        </li>
+
+        <li> Что из этого было изобретено раньше?
+
+            <form id="a9">
+                <br><input type="radio" name="8" value="vopros91"/>Машина
+                <br><input type="radio" name="8" value="vopros92"/>телевизор
+                <br><input type="radio" name="8" value="vopros93"/>Телефон
+            </form>
+        </li>
+
+        <li> Выбрать произведение Чехова.
+
+            <form id="a10">
+                <br><input type="radio" name="9" value="vopros101" />«Дядя Ваня»
+                <br><input type="radio" name="9" value="vopros102" />«Кавказский пленник»
+                <br><input type="radio" name="9" value="vopros103" />«Сказка о царе Салтане»
+            </form>
+
+        </li>
+    </ol>
+    <input type="button" class="btn" value="Посмотреть результат" onclick="cout()">
+    <a href="test_sq.pdf"><h3>PDF файл</h3></a>
 </div>
 <div id="bl" class="modal">
-<div class="container">
-<p id="result"></p>
+    <div class="container">
+        <p id="result"></p>
+    </div>
 </div>
-</div>
-<div style="text-align:center; padding:20px; font-size:20px;>
-<a href="index.html">Назад</a>
-</div>
+
 </body>
 </html>
