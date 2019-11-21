@@ -8,7 +8,7 @@
 
  <link rel="shortcut icon" href="favicon.png" type="image/png">
 <script>
-let array_of_correct_answers = ['vopros12', 'Братислава', 'vopros32', 'vopros43', 'vopros53', 'vopros62', 'vopros72', 'vopros82', 'vopros93', 'vopros101'];
+let massiv_otvetov = ['vopros12', 'Братислава', 'vopros32', 'vopros43', 'vopros53', 'vopros62', 'vopros72', 'vopros82', 'vopros93', 'vopros101'];
 let numner_questions = 10;
 let a = [];
 function proverka(j = 0) {
@@ -32,7 +32,7 @@ alert("Вы ответили не на все вопросы")
 }
 else {
 for (let i = 0; i < numner_questions; i++) {
-if (p[i] == array_of_correct_answers[i]) {
+if (p[i] == massiv_otvetov[i]) {
 n++;
 }
 }
@@ -60,7 +60,7 @@ document.getElementById("result").innerHTML = "Правильно " + n;
 <li>Столица Словакии?
 <br></br>
 <form id="a">
-<br><input type="text" name="0"><br>
+<br><input type="text" name="0"></br>
 </form>
 </li>
 <br></br>
@@ -85,18 +85,18 @@ document.getElementById("result").innerHTML = "Правильно " + n;
 <li> В каких года Винстон Черчиль являлся премьер-министром Великобритании?(19**)
 <br></br>
 <form id="a5">
-<br><input type="radio" name="4" value="vopros51"/>30-35<br/>
-<br><input type="radio" name="4" value="vopros42"/>35-40<br/>
-<br><input type="radio" name="4" value="vopros53"/>40-45<br/>
+<br><input type="radio" name="4" value="vopros51"/>30-35</br>
+<br><input type="radio" name="4" value="vopros42"/>35-40</br>
+<br><input type="radio" name="4" value="vopros53"/>40-45</br>
 </form>
 </li>
 <br></br>
 <li> Сколько зубов у взрослого человека?
 <br></br>
 <form id="a6">
-<br><input type="radio" name="5" value="vopros61"/>28<br/>
-<br><input type="radio" name="5" value="vopros62"/>32<br/>
-<br><input type="radio" name="5" value="vopros63"/>36<br/>
+<br><input type="radio" name="5" value="vopros61"/>28<br>
+<br><input type="radio" name="5" value="vopros62"/>32</br>
+<br><input type="radio" name="5" value="vopros63"/>36</br>
 </form>
 </li>
 <br></br>
@@ -112,27 +112,27 @@ document.getElementById("result").innerHTML = "Правильно " + n;
 <li>У Земли есть одна Луна, а у Марса?
 <br></br>
 <form id="a8">
-<br><input type="radio" name="7" value="vopros81"/>1<br/>
-<br><input type="radio" name="7" value="vopros82"/>2<br/>
-<br><input type="radio" name="7" value="vopros83"/>3<br/>
+<br><input type="radio" name="7" value="vopros81"/>1<br>
+<br><input type="radio" name="7" value="vopros82"/>2<br>
+<br><input type="radio" name="7" value="vopros83"/>3<br>
 </form>
 </li>
 <br></br>
 <li> Что из этого было изобретено раньше?
 <br></br>
 <form id="a9">
-<br><input type="radio" name="8" value="vopros91"/>Машина<br/>
-<br><input type="radio" name="8" value="vopros92"/>телевизор<br/>
-<br><input type="radio" name="8" value="vopros93"/>Телефон<br/>
+<br><input type="radio" name="8" value="vopros91"/>Машина</br>
+<br><input type="radio" name="8" value="vopros92"/>телевизор</br>
+<br><input type="radio" name="8" value="vopros93"/>Телефон</br>
 </form>
 </li>
 <br></br>
 <li> Выбрать произведение Чехова. 
 <br></br>
 <form id="a10">
-<br><input type="radio" name="9" value="vopros101" />«Дядя Ваня»<br/>
-<br><input type="radio" name="9" value="vopros102" />«Кавказский пленник»<br/>
-<br><input type="radio" name="9" value="vopros103" />«Сказка о царе Салтане»а<br/>
+<br><input type="radio" name="9" value="vopros101" />«Дядя Ваня»</br>
+<br><input type="radio" name="9" value="vopros102" />«Кавказский пленник»</br>
+<br><input type="radio" name="9" value="vopros103" />«Сказка о царе Салтане»а</br>
 
 <br></br>
 </li>
