@@ -9,7 +9,8 @@
     .block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-	grid-template-rows: 100px 300px 200px 200px;
+	grid-template-rows: 100px auto auto 200px 200px;
+    
  
 }
 .block1 {
@@ -18,35 +19,35 @@
 	grid-column-end:4 ;
 }
 .block2 {
-	
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 	grid-column-start:2 ;
-	grid-column-end:3 ;
+	grid-column-end:4 ;
 }
 .block3 {
-	
-	grid-column-start: 3;
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+	grid-column-start: 2;
 	grid-column-end: 4;
 
 }
 .block4 {
-	
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 	grid-column-start:2 ;
 	grid-column-end:3 ;
 
 }
 .block5 {
-	
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
     grid-column-start:3 ;
 	grid-column-end:4 ;
 
 }
 .block6 {
-	
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 	grid-column-start:2 ;
 	grid-column-end: 3;
 }
 .block7 {
-	
+	background:linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
 	grid-column-start:3 ;
 	grid-column-end: 4;
 }
@@ -62,6 +63,9 @@ img{max-width:100%; max-height:100%}
 }
 .center-pic{
 text-align:center;
+
+padding-top: 0px;
+    margin: 0;
 }
 #centerS { 
 	text-align: center; 
@@ -75,18 +79,33 @@ text-align:center;
 }
 
 
+#text { 
+	
+	font: bold 1.2em "Martyricpersonal",serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    color: #b30000;
+    padding-top: 0px;
+    margin: 0;
+    text-shadow: 2px 0 2px rgba(53, 0, 0, 1), 0 2px 2px rgba(53, 0, 0, 1), -2px 0 2px rgba(53, 0, 0, 1), 0 -2px 2px rgba(53, 0, 0, 1), 2px 2px 2px rgba(53, 0, 0, 0.5);
+}
+
+
+
 @media screen and (min-width: 320px) and (max-width: 1280px)
 {
     .block {
     display: grid;
     grid-template-columns: 1fr ;
 	grid-template-rows: 100px 200px 200px 200px 200px 200px 200px;
+    
  
 }
 .block1 {
 	background:red;
 	grid-column-start:1 ;
 	grid-column-end:2 ;
+    
 }
 .block2 {
 	background:blue;
@@ -146,12 +165,13 @@ background="https://s1.1zoom.me/b5050/642/DOTA_2_Wraith_King_437411_2048x1152.jp
 <div class="block">
 
   <div class="block1">
-  <img src="https://2sticker.ru/wa-data/public/shop/products/53/30/3053/images/26119/26119.970.png" align="left">
+  <a href="wepwenb.github.io/grand1"><img src="https://2sticker.ru/wa-data/public/shop/products/53/30/3053/images/26119/26119.970.png" align="left"></a>
   <h1 class="log">DOTA 2 WIKI</h1>
   </div>
   
-  <div class="block2">2</div>
-  <div class="block3">2</div>
+  <div class="block2"><a href="anylvl.com"><p class="center-pic" ><img src="https://sun9-58.userapi.com/c834201/v834201131/19f876/gX6EwmVBBtc.jpg" ></a></div>
+  <div class="block3">
+  <p id="text">Dota 2 — компьютерная многопользовательская командная игра в жанре multiplayer online battle arena, разработанная корпорацией Valve. Игра является продолжением DotA — пользовательской карты-модификации для игры Warcraft III: Reign of Chaos и дополнения к ней Warcraft III: The Frozen Throne. Игра изображает сражение на карте особого вида; в каждом матче участвуют две команды по пять игроков, управляющих «героями» — персонажами с различными наборами способностей. Для победы в матче команда должна уничтожить особый объект-«крепость», принадлежащий вражеской стороне, и защитить от уничтожения собственную «крепость». Dota 2 работает по модели free-to-play с элементами микроплатежей.</div>
   <div class="block4">
   <a href="https://dota2-ru.gamepedia.com/Герои"><p class="center-pic"><img  src="https://gamepedia.cursecdn.com/dota2_gamepedia/f/f5/Main_Page_icon_Heroes.png?version=79073e9d63c12e68457d108ed2545ac8"></p>
   <p id="centerS">Герои</p></a>
