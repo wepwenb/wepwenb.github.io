@@ -4,43 +4,65 @@
 <style>
 .block {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 100px 200px 200px 200px;
  
 }
+
+
 .block1 {
 background:red;
-grid-column-start: 1;
-grid-column-end: 4;
+grid-column-start:2 ;
+grid-column-end:4 ;
 }
 .block2 {
 background:blue;
+grid-column-start:2 ;
+grid-column-end:3 ;
 }
 .block3 {
 background:yellow;
-grid-column-start: 2;
+grid-column-start: 3;
 grid-column-end: 4;
 
 }
 .block4 {
 background:pink;
+grid-column-start:2 ;
+grid-column-end:3 ;
 
 }
 .block5 {
 background:orange;
+
 }
 .block6 {
 background:magenta;
-grid-column-start: 3;
-grid-column-end: 4;
+grid-column-start:2 ;
+grid-column-end: 3;
 }
+img{max-width:100%; max-height:100%}
+
+.log {
+ font: bold 5.5em "Martyricpersonal",serif;
+    font-weight: 400;
+    font-stretch: expanded;
+    color: black;
+    padding: 0; margin: 0;
+    text-shadow: 2px 0 2px #4d4d4d, 0 2px 2px #363636, -2px 0 2px #363636, 0 -2px 2px #363636, 2px 2px 2px #363636;
+}
+
 </style>
 <title>Page Title</title>
 </head>
 <body>
 <div class="block">
 
-  <div class="block1">1</div>
+  <div class="block1">
+  <img src="https://2sticker.ru/wa-data/public/shop/products/53/30/3053/images/26119/26119.970.png" align="left">
+  <h1 class="log">DOTA 2 WIKI</h1>
+  
+  </div>
   <div class="block2">2</div>
   <div class="block3">3</div>
   <div class="block4">4</div>
